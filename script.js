@@ -1,5 +1,5 @@
 // Target WhatsApp number (+230 5767 6809)
-const WHATSAPP_PHONE = "23057676809";
+const WHATSAPP_PHONE = "23059351567";
 
 const qs = (selector) => document.querySelector(selector);
 const question = qs("#question");
