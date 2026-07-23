@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will you go out with me? 🥹💖</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Floating background hearts container -->
+    <div id="hearts-bg" aria-hidden="true"></div>
+
+    <main class="wrapper">
+      <div class="card" id="proposal-card">
+        <h2 class="question" id="question">Will you go out with me? 🥹</h2>
+        
+        <div class="gif-container">
+          <img
+            id="gif"
+            class="gif"
+            alt="Cute romance GIF"
+            src="https://media.giphy.com/media/FTGah7Mx3ss04PcasF/giphy.gif"
+          />
+        </div>
+
+        <!-- Initial Buttons -->
+        <div class="btn-group" id="btn-group">
+          <button id="yes-btn" class="yes-btn">Yes 🥰</button>
+          <button id="no-btn" class="no-btn">No 😜</button>
+        </div>
+
+        <!-- Date & Time Selection Panel (hidden initially) -->
+        <div id="date-time-panel" class="date-time-panel hidden">
+          <p class="panel-subtitle">Pick the perfect date & time for us ✨</p>
+          
+          <div class="input-group">
+            <div class="field">
+              <label for="date-day">📅 Select Date (1 - 31)</label>
+              <select id="date-day" class="custom-select date-select">
+                <!-- Days 1 to 31 populated in script/HTML -->
+                <option value="1">1st</option>
+                <option value="2">2nd</option>
+                <option value="3">3rd</option>
+                <option value="4">4th</option>
+                <option value="5">5th</option>
+                <option value="6">6th</option>
+                <option value="7">7th</option>
+                <option value="8">8th</option>
+                <option value="9">9th</option>
+                <option value="10">10th</option>
+                <option value="11">11th</option>
+                <option value="12">12th</option>
+                <option value="13">13th</option>
+                <option value="14">14th</option>
+                <option value="15">15th</option>
+                <option value="16">16th</option>
+                <option value="17">17th</option>
+                <option value="18">18th</option>
+                <option value="19">19th</option>
+                <option value="20">20th</option>
+                <option value="21">21st</option>
+                <option value="22">22nd</option>
+                <option value="23">23rd</option>
+                <option value="24" selected>24th</option>
+                <option value="25">25th</option>
+                <option value="26">26th</option>
+                <option value="27">27th</option>
+                <option value="28">28th</option>
+                <option value="29">29th</option>
+                <option value="30">30th</option>
+                <option value="31">31st</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>⏰ Select Time (12h)</label>
+              <div class="time-picker-12h">
+                <select id="time-hour" class="custom-select">
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07" selected>07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                <span class="time-colon">:</span>
+                <select id="time-minute" class="custom-select">
+                  <option value="00" selected>00</option>
+                  <option value="05">05</option>
+                  <option value="10">10</option>
+                  <option value="15">15</option>
+                  <option value="20">20</option>
+                  <option value="25">25</option>
+                  <option value="30">30</option>
+                  <option value="35">35</option>
+                  <option value="40">40</option>
+                  <option value="45">45</option>
+                  <option value="50">50</option>
+                  <option value="55">55</option>
+                </select>
+                <select id="time-ampm" class="custom-select ampm-select">
+                  <option value="AM">AM</option>
+                  <option value="PM" selected>PM</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <button id="letsgo-btn" class="letsgo-btn">
+            <span>Let's Go! 💖</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
